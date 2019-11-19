@@ -17756,7 +17756,7 @@ System.out.println("13*47 == 611");
 if( num1 ==13&& num2 ==48&& sign == '*' ){
 System.out.println("13*48 == 624");
 }
-if( num1 ==13&& num2 ==49&& sign == '*' ){
+if( num1 ==13 && num2 ==49&& sign == '*' ){
 System.out.println("13*49 == 637");
 }
 if( num1 ==13&& num2 ==50&& sign == '*' ){

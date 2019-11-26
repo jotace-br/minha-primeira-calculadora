@@ -25,7 +25,7 @@ Ele irá perguntar qual é o primeiro número que você deseja (lembre-se, de 0 
 
 ## Licença
 
-Este projeto é licenciado sobre a Apache License 2.0 - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes
+Este projeto é licenciado sobre a Apache License 2.0 - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
 
 ## Bugs
 

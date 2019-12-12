@@ -29,6 +29,7 @@ Este projeto é licenciado sobre a Apache License 2.0 - veja o arquivo [LICENSE.
 
 ## Bugs
 
+**Bug encontrado!**: O código faz de 0 a 10, de 11 a 20, de 21 a 30, de 31 a 40 e 41 a 50. Não podendo interpor entre os números (ex.: 8 e 25).
 Caso ache um bug, por favor... **reporte!**
 
 ## Agradecimentos

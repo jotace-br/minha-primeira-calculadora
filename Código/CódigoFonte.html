@@ -1,42 +1,30 @@
 <script>
-	var x = 1;
-	var i, j = 0, k = 0, linha = 1;
+	let first = (second = opIndex = 0);
+	const operators = ['+', '-', '*', '/'];
+	const max = 10;
+	while (true) {
+		let operator = operators[opIndex];
 
-	do {
-		for (i = 41; i <= 50; i++) {
-			for (j = 41; j <= 50; j++) {
-				//document.write("<br>",linha,": ");
-				if (x == 1) {
-					document.write("if(num1 == ", i, " && num2 == ", j, " && sign == '+'){<br>System.out.println(\"", i, " + ", j, " == ", i + j, "\");<br>}<br>");
-				}
-				else if (x == 2) {
-					document.write("if(num1 == ", i, " && num2 == ", j, " && sign == '-'){<br>System.out.println(\"", i, " - ", j, " == ", i - j, "\");<br>}<br>");
-				}
-				else if (x == 3) {
-					document.write("if(num1 == ", i, " && num2 == ", j, " && sign == '*'){<br>System.out.println(\"", i, " * ", j, " == ", i * j, "\");<br>}<br>");
-				}
-				else {
-					if (j != 0) {
-						document.write("if(num1 == ", i, " && num2 == ", j, " && sign == '/'){<br>System.out.println(\"", i, "/", j, " == ", i / j, "\");<br>}<br>");
-					}
-				}
-				linha++;
-			}
-		}
-		if (x < 4) {
-			x++;
-		}
-		else {
-			x = 1;
+		if (second == max) {
+			second = 0;
+			first++;
 		}
 
-		k++;
+		document.write(
+			`if (num1 == ${first} && num2 == ${second} && sign == '${operator}') {<br>System.out.println("${first} ${operator} ${second} == ${eval(
+			`${first} ${operator} ${second}`
+			)}");<br>}<br>`
+		);
 
-	} while (k < 4);
+		if (first == max) {
+			first = 0;
+			opIndex++;
+		}
 
-	document.write("System.out.println(\"Obrigado por usar a calculadora, adeus! :)\");<br>")
-	document.write("}<br>")
-	document.write("}")
-
-
+		if (opIndex == operators.length) {
+			break;
+		}
+		
+		second++;
+	}
 </script>
